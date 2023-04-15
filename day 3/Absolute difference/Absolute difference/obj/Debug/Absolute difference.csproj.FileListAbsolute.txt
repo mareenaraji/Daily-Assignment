@@ -1,0 +1,8 @@
+D:\UST DEMO\day 3\Absolute difference\Absolute difference\bin\Debug\Absolute difference.exe.config
+D:\UST DEMO\day 3\Absolute difference\Absolute difference\bin\Debug\Absolute difference.exe
+D:\UST DEMO\day 3\Absolute difference\Absolute difference\bin\Debug\Absolute difference.pdb
+D:\UST DEMO\day 3\Absolute difference\Absolute difference\obj\Debug\Absolute difference.csproj.AssemblyReference.cache
+D:\UST DEMO\day 3\Absolute difference\Absolute difference\obj\Debug\Absolute difference.csproj.SuggestedBindingRedirects.cache
+D:\UST DEMO\day 3\Absolute difference\Absolute difference\obj\Debug\Absolute difference.csproj.CoreCompileInputs.cache
+D:\UST DEMO\day 3\Absolute difference\Absolute difference\obj\Debug\Absolute difference.exe
+D:\UST DEMO\day 3\Absolute difference\Absolute difference\obj\Debug\Absolute difference.pdb

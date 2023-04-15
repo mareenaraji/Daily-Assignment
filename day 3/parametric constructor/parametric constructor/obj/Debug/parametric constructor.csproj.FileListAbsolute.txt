@@ -1,0 +1,3 @@
+D:\UST DEMO\day 3\parametric constructor\parametric constructor\obj\Debug\parametric constructor.csproj.AssemblyReference.cache
+D:\UST DEMO\day 3\parametric constructor\parametric constructor\obj\Debug\parametric constructor.csproj.SuggestedBindingRedirects.cache
+D:\UST DEMO\day 3\parametric constructor\parametric constructor\obj\Debug\parametric constructor.csproj.CoreCompileInputs.cache
