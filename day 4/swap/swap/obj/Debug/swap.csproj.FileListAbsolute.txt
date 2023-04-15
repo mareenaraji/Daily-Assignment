@@ -1,0 +1,8 @@
+D:\UST DEMO\day 4\swap\swap\bin\Debug\swap.exe.config
+D:\UST DEMO\day 4\swap\swap\bin\Debug\swap.exe
+D:\UST DEMO\day 4\swap\swap\bin\Debug\swap.pdb
+D:\UST DEMO\day 4\swap\swap\obj\Debug\swap.csproj.AssemblyReference.cache
+D:\UST DEMO\day 4\swap\swap\obj\Debug\swap.csproj.SuggestedBindingRedirects.cache
+D:\UST DEMO\day 4\swap\swap\obj\Debug\swap.csproj.CoreCompileInputs.cache
+D:\UST DEMO\day 4\swap\swap\obj\Debug\swap.exe
+D:\UST DEMO\day 4\swap\swap\obj\Debug\swap.pdb

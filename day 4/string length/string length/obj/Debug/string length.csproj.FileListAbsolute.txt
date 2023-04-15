@@ -1,0 +1,8 @@
+D:\UST DEMO\day 4\string length\string length\bin\Debug\string length.exe.config
+D:\UST DEMO\day 4\string length\string length\bin\Debug\string length.exe
+D:\UST DEMO\day 4\string length\string length\bin\Debug\string length.pdb
+D:\UST DEMO\day 4\string length\string length\obj\Debug\string length.csproj.AssemblyReference.cache
+D:\UST DEMO\day 4\string length\string length\obj\Debug\string length.csproj.SuggestedBindingRedirects.cache
+D:\UST DEMO\day 4\string length\string length\obj\Debug\string length.csproj.CoreCompileInputs.cache
+D:\UST DEMO\day 4\string length\string length\obj\Debug\string length.exe
+D:\UST DEMO\day 4\string length\string length\obj\Debug\string length.pdb
