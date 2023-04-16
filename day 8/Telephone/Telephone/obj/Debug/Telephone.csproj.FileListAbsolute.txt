@@ -1,0 +1,8 @@
+D:\UST DEMO\day 8\Telephone\Telephone\bin\Debug\Telephone.exe.config
+D:\UST DEMO\day 8\Telephone\Telephone\bin\Debug\Telephone.exe
+D:\UST DEMO\day 8\Telephone\Telephone\bin\Debug\Telephone.pdb
+D:\UST DEMO\day 8\Telephone\Telephone\obj\Debug\Telephone.csproj.AssemblyReference.cache
+D:\UST DEMO\day 8\Telephone\Telephone\obj\Debug\Telephone.csproj.SuggestedBindingRedirects.cache
+D:\UST DEMO\day 8\Telephone\Telephone\obj\Debug\Telephone.csproj.CoreCompileInputs.cache
+D:\UST DEMO\day 8\Telephone\Telephone\obj\Debug\Telephone.exe
+D:\UST DEMO\day 8\Telephone\Telephone\obj\Debug\Telephone.pdb

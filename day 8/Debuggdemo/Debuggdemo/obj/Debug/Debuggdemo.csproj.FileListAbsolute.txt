@@ -1,0 +1,8 @@
+D:\UST DEMO\day 8\Debuggdemo\Debuggdemo\bin\Debug\Debuggdemo.exe.config
+D:\UST DEMO\day 8\Debuggdemo\Debuggdemo\bin\Debug\Debuggdemo.exe
+D:\UST DEMO\day 8\Debuggdemo\Debuggdemo\bin\Debug\Debuggdemo.pdb
+D:\UST DEMO\day 8\Debuggdemo\Debuggdemo\obj\Debug\Debuggdemo.csproj.AssemblyReference.cache
+D:\UST DEMO\day 8\Debuggdemo\Debuggdemo\obj\Debug\Debuggdemo.csproj.SuggestedBindingRedirects.cache
+D:\UST DEMO\day 8\Debuggdemo\Debuggdemo\obj\Debug\Debuggdemo.csproj.CoreCompileInputs.cache
+D:\UST DEMO\day 8\Debuggdemo\Debuggdemo\obj\Debug\Debuggdemo.exe
+D:\UST DEMO\day 8\Debuggdemo\Debuggdemo\obj\Debug\Debuggdemo.pdb
