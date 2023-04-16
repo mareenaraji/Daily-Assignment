@@ -1,0 +1,8 @@
+D:\UST DEMO\day 5\speeddisplay\speeddisplay\bin\Debug\speeddisplay.exe.config
+D:\UST DEMO\day 5\speeddisplay\speeddisplay\bin\Debug\speeddisplay.exe
+D:\UST DEMO\day 5\speeddisplay\speeddisplay\bin\Debug\speeddisplay.pdb
+D:\UST DEMO\day 5\speeddisplay\speeddisplay\obj\Debug\speeddisplay.csproj.AssemblyReference.cache
+D:\UST DEMO\day 5\speeddisplay\speeddisplay\obj\Debug\speeddisplay.csproj.SuggestedBindingRedirects.cache
+D:\UST DEMO\day 5\speeddisplay\speeddisplay\obj\Debug\speeddisplay.csproj.CoreCompileInputs.cache
+D:\UST DEMO\day 5\speeddisplay\speeddisplay\obj\Debug\speeddisplay.exe
+D:\UST DEMO\day 5\speeddisplay\speeddisplay\obj\Debug\speeddisplay.pdb
