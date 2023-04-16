@@ -1,0 +1,8 @@
+D:\UST DEMO\day 7\DtoB\DtoB\obj\Debug\DtoB.csproj.AssemblyReference.cache
+D:\UST DEMO\day 7\DtoB\DtoB\obj\Debug\DtoB.csproj.SuggestedBindingRedirects.cache
+D:\UST DEMO\day 7\DtoB\DtoB\obj\Debug\DtoB.csproj.CoreCompileInputs.cache
+D:\UST DEMO\day 7\DtoB\DtoB\bin\Debug\DtoB.exe.config
+D:\UST DEMO\day 7\DtoB\DtoB\bin\Debug\DtoB.exe
+D:\UST DEMO\day 7\DtoB\DtoB\bin\Debug\DtoB.pdb
+D:\UST DEMO\day 7\DtoB\DtoB\obj\Debug\DtoB.exe
+D:\UST DEMO\day 7\DtoB\DtoB\obj\Debug\DtoB.pdb

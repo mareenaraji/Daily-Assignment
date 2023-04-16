@@ -1,0 +1,8 @@
+D:\UST DEMO\day 7\AmountMinim\AmountMinim\bin\Debug\AmountMinim.exe.config
+D:\UST DEMO\day 7\AmountMinim\AmountMinim\bin\Debug\AmountMinim.exe
+D:\UST DEMO\day 7\AmountMinim\AmountMinim\bin\Debug\AmountMinim.pdb
+D:\UST DEMO\day 7\AmountMinim\AmountMinim\obj\Debug\AmountMinim.csproj.AssemblyReference.cache
+D:\UST DEMO\day 7\AmountMinim\AmountMinim\obj\Debug\AmountMinim.csproj.SuggestedBindingRedirects.cache
+D:\UST DEMO\day 7\AmountMinim\AmountMinim\obj\Debug\AmountMinim.csproj.CoreCompileInputs.cache
+D:\UST DEMO\day 7\AmountMinim\AmountMinim\obj\Debug\AmountMinim.exe
+D:\UST DEMO\day 7\AmountMinim\AmountMinim\obj\Debug\AmountMinim.pdb
