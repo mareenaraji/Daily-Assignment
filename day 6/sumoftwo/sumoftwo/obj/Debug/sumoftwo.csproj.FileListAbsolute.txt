@@ -1,0 +1,8 @@
+D:\UST DEMO\day 6\sumoftwo\sumoftwo\bin\Debug\sumoftwo.exe.config
+D:\UST DEMO\day 6\sumoftwo\sumoftwo\bin\Debug\sumoftwo.exe
+D:\UST DEMO\day 6\sumoftwo\sumoftwo\bin\Debug\sumoftwo.pdb
+D:\UST DEMO\day 6\sumoftwo\sumoftwo\obj\Debug\sumoftwo.csproj.AssemblyReference.cache
+D:\UST DEMO\day 6\sumoftwo\sumoftwo\obj\Debug\sumoftwo.csproj.SuggestedBindingRedirects.cache
+D:\UST DEMO\day 6\sumoftwo\sumoftwo\obj\Debug\sumoftwo.csproj.CoreCompileInputs.cache
+D:\UST DEMO\day 6\sumoftwo\sumoftwo\obj\Debug\sumoftwo.exe
+D:\UST DEMO\day 6\sumoftwo\sumoftwo\obj\Debug\sumoftwo.pdb
