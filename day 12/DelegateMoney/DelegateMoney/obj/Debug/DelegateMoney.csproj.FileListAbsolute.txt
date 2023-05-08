@@ -1,0 +1,8 @@
+D:\UST DEMO\day 12\DelegateMoney\DelegateMoney\obj\Debug\DelegateMoney.csproj.AssemblyReference.cache
+D:\UST DEMO\day 12\DelegateMoney\DelegateMoney\obj\Debug\DelegateMoney.csproj.SuggestedBindingRedirects.cache
+D:\UST DEMO\day 12\DelegateMoney\DelegateMoney\obj\Debug\DelegateMoney.csproj.CoreCompileInputs.cache
+D:\UST DEMO\day 12\DelegateMoney\DelegateMoney\bin\Debug\DelegateMoney.exe.config
+D:\UST DEMO\day 12\DelegateMoney\DelegateMoney\bin\Debug\DelegateMoney.exe
+D:\UST DEMO\day 12\DelegateMoney\DelegateMoney\bin\Debug\DelegateMoney.pdb
+D:\UST DEMO\day 12\DelegateMoney\DelegateMoney\obj\Debug\DelegateMoney.exe
+D:\UST DEMO\day 12\DelegateMoney\DelegateMoney\obj\Debug\DelegateMoney.pdb

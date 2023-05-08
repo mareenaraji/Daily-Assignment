@@ -1,0 +1,8 @@
+D:\UST DEMO\day 12\ExceptioDemo\ExceptioDemo\bin\Debug\ExceptioDemo.exe.config
+D:\UST DEMO\day 12\ExceptioDemo\ExceptioDemo\bin\Debug\ExceptioDemo.exe
+D:\UST DEMO\day 12\ExceptioDemo\ExceptioDemo\bin\Debug\ExceptioDemo.pdb
+D:\UST DEMO\day 12\ExceptioDemo\ExceptioDemo\obj\Debug\ExceptioDemo.csproj.AssemblyReference.cache
+D:\UST DEMO\day 12\ExceptioDemo\ExceptioDemo\obj\Debug\ExceptioDemo.csproj.SuggestedBindingRedirects.cache
+D:\UST DEMO\day 12\ExceptioDemo\ExceptioDemo\obj\Debug\ExceptioDemo.csproj.CoreCompileInputs.cache
+D:\UST DEMO\day 12\ExceptioDemo\ExceptioDemo\obj\Debug\ExceptioDemo.exe
+D:\UST DEMO\day 12\ExceptioDemo\ExceptioDemo\obj\Debug\ExceptioDemo.pdb

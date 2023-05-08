@@ -1,0 +1,8 @@
+D:\UST DEMO\day 12\ExceptionBank\ExceptionBank\bin\Debug\ExceptionBank.exe.config
+D:\UST DEMO\day 12\ExceptionBank\ExceptionBank\bin\Debug\ExceptionBank.exe
+D:\UST DEMO\day 12\ExceptionBank\ExceptionBank\bin\Debug\ExceptionBank.pdb
+D:\UST DEMO\day 12\ExceptionBank\ExceptionBank\obj\Debug\ExceptionBank.csproj.AssemblyReference.cache
+D:\UST DEMO\day 12\ExceptionBank\ExceptionBank\obj\Debug\ExceptionBank.csproj.SuggestedBindingRedirects.cache
+D:\UST DEMO\day 12\ExceptionBank\ExceptionBank\obj\Debug\ExceptionBank.csproj.CoreCompileInputs.cache
+D:\UST DEMO\day 12\ExceptionBank\ExceptionBank\obj\Debug\ExceptionBank.exe
+D:\UST DEMO\day 12\ExceptionBank\ExceptionBank\obj\Debug\ExceptionBank.pdb
