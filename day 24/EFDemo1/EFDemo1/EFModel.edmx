@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="EMPDModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Client_Master">
+          <Key>
+            <PropertyRef Name="ClientNo" />
+          </Key>
+          <Property Name="ClientNo" Type="varchar" MaxLength="6" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Address1" Type="varchar" MaxLength="30" />
+          <Property Name="Address2" Type="varchar" MaxLength="30" />
+          <Property Name="City" Type="varchar" MaxLength="15" />
+          <Property Name="Pincode" Type="numeric" Precision="8" Scale="0" />
+          <Property Name="State" Type="varchar" MaxLength="15" />
+          <Property Name="BalDue" Type="numeric" Precision="10" Scale="2" />
+        </EntityType>
+        <EntityType Name="Product_Master">
+          <Key>
+            <PropertyRef Name="ProductNo" />
+          </Key>
+          <Property Name="ProductNo" Type="varchar" MaxLength="6" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="ProfitPerc" Type="numeric" Precision="4" Scale="2" Nullable="false" />
+          <Property Name="UnitMeasure" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="QtyonHand" Type="numeric" Precision="8" Scale="0" Nullable="false" />
+          <Property Name="ReorderLvl" Type="numeric" Precision="8" Scale="0" Nullable="false" />
+          <Property Name="SellPrice" Type="numeric" Precision="8" Scale="2" />
+          <Property Name="CostPrice" Type="numeric" Precision="8" Scale="2" />
+        </EntityType>
+        <EntityType Name="Sales_Order">
+          <Key>
+            <PropertyRef Name="OrderNo" />
+          </Key>
+          <Property Name="OrderNo" Type="varchar" MaxLength="6" Nullable="false" />
+          <Property Name="ClientNo" Type="varchar" MaxLength="6" />
+          <Property Name="OrderDate" Type="date" />
+          <Property Name="DelyAddr" Type="varchar" MaxLength="25" />
+          <Property Name="SalesManNo" Type="varchar" MaxLength="6" />
+          <Property Name="DelyType" Type="char" MaxLength="1" />
+          <Property Name="BilledYn" Type="char" MaxLength="1" />
+          <Property Name="DelyDate" Type="date" />
+          <Property Name="OrderStatus" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Sales_Order_Details">
+          <Key>
+            <PropertyRef Name="OrderNo" />
+            <PropertyRef Name="ProductNo" />
+          </Key>
+          <Property Name="OrderNo" Type="varchar" MaxLength="6" Nullable="false" />
+          <Property Name="ProductNo" Type="varchar" MaxLength="6" Nullable="false" />
+          <Property Name="QtyOrdered" Type="numeric" Precision="8" Scale="0" />
+          <Property Name="QtyDisp" Type="numeric" Precision="8" Scale="0" />
+          <Property Name="ProductRate" Type="numeric" Precision="10" Scale="2" />
+        </EntityType>
+        <EntityType Name="Salesman_Master">
+          <Key>
+            <PropertyRef Name="SalesManno" />
+          </Key>
+          <Property Name="SalesManno" Type="varchar" MaxLength="6" Nullable="false" />
+          <Property Name="SalesManname" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Address1" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Address2" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="City" Type="varchar" MaxLength="20" />
+          <Property Name="Pincode" Type="numeric" Precision="8" Scale="0" />
+          <Property Name="State" Type="varchar" MaxLength="20" />
+          <Property Name="Salamt" Type="numeric" Precision="8" Scale="2" Nullable="false" />
+          <Property Name="Tgttoget" Type="numeric" Precision="6" Scale="2" Nullable="false" />
+          <Property Name="Ytdsales" Type="numeric" Precision="6" Scale="2" Nullable="false" />
+          <Property Name="Remarks" Type="varchar" MaxLength="60" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'EMPD.dbo.test' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="test">
+          <Property Name="Id" Type="int" />
+          <Property Name="Name" Type="varchar" MaxLength="20" />
+        </EntityType>-->
+        <Association Name="FK__Sales_Ord__Clien__72C60C4A">
+          <End Role="Client_Master" Type="Self.Client_Master" Multiplicity="0..1" />
+          <End Role="Sales_Order" Type="Self.Sales_Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Client_Master">
+              <PropertyRef Name="ClientNo" />
+            </Principal>
+            <Dependent Role="Sales_Order">
+              <PropertyRef Name="ClientNo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Sales_Ord__Order__797309D9">
+          <End Role="Sales_Order" Type="Self.Sales_Order" Multiplicity="1" />
+          <End Role="Sales_Order_Details" Type="Self.Sales_Order_Details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sales_Order">
+              <PropertyRef Name="OrderNo" />
+            </Principal>
+            <Dependent Role="Sales_Order_Details">
+              <PropertyRef Name="OrderNo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Sales_Ord__Produ__7A672E12">
+          <End Role="Product_Master" Type="Self.Product_Master" Multiplicity="1" />
+          <End Role="Sales_Order_Details" Type="Self.Sales_Order_Details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product_Master">
+              <PropertyRef Name="ProductNo" />
+            </Principal>
+            <Dependent Role="Sales_Order_Details">
+              <PropertyRef Name="ProductNo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Sales_Ord__Sales__73BA3083">
+          <End Role="Salesman_Master" Type="Self.Salesman_Master" Multiplicity="0..1" />
+          <End Role="Sales_Order" Type="Self.Sales_Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Salesman_Master">
+              <PropertyRef Name="SalesManno" />
+            </Principal>
+            <Dependent Role="Sales_Order">
+              <PropertyRef Name="SalesManNo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="EMPDModelStoreContainer">
+          <EntitySet Name="Client_Master" EntityType="Self.Client_Master" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Product_Master" EntityType="Self.Product_Master" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sales_Order" EntityType="Self.Sales_Order" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sales_Order_Details" EntityType="Self.Sales_Order_Details" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Salesman_Master" EntityType="Self.Salesman_Master" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Sales_Ord__Clien__72C60C4A" Association="Self.FK__Sales_Ord__Clien__72C60C4A">
+            <End Role="Client_Master" EntitySet="Client_Master" />
+            <End Role="Sales_Order" EntitySet="Sales_Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Sales_Ord__Order__797309D9" Association="Self.FK__Sales_Ord__Order__797309D9">
+            <End Role="Sales_Order" EntitySet="Sales_Order" />
+            <End Role="Sales_Order_Details" EntitySet="Sales_Order_Details" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Sales_Ord__Produ__7A672E12" Association="Self.FK__Sales_Ord__Produ__7A672E12">
+            <End Role="Product_Master" EntitySet="Product_Master" />
+            <End Role="Sales_Order_Details" EntitySet="Sales_Order_Details" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Sales_Ord__Sales__73BA3083" Association="Self.FK__Sales_Ord__Sales__73BA3083">
+            <End Role="Salesman_Master" EntitySet="Salesman_Master" />
+            <End Role="Sales_Order" EntitySet="Sales_Order" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="EMPDModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Client_Master">
+          <Key>
+            <PropertyRef Name="ClientNo" />
+          </Key>
+          <Property Name="ClientNo" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Address1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Address2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="City" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Pincode" Type="Decimal" Precision="8" Scale="0" />
+          <Property Name="State" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="BalDue" Type="Decimal" Precision="10" Scale="2" />
+          <NavigationProperty Name="Sales_Order" Relationship="Self.FK__Sales_Ord__Clien__72C60C4A" FromRole="Client_Master" ToRole="Sales_Order" />
+        </EntityType>
+        <EntityType Name="Product_Master">
+          <Key>
+            <PropertyRef Name="ProductNo" />
+          </Key>
+          <Property Name="ProductNo" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ProfitPerc" Type="Decimal" Precision="4" Scale="2" Nullable="false" />
+          <Property Name="UnitMeasure" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="QtyonHand" Type="Decimal" Precision="8" Scale="0" Nullable="false" />
+          <Property Name="ReorderLvl" Type="Decimal" Precision="8" Scale="0" Nullable="false" />
+          <Property Name="SellPrice" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="CostPrice" Type="Decimal" Precision="8" Scale="2" />
+          <NavigationProperty Name="Sales_Order_Details" Relationship="Self.FK__Sales_Ord__Produ__7A672E12" FromRole="Product_Master" ToRole="Sales_Order_Details" />
+        </EntityType>
+        <EntityType Name="Sales_Order">
+          <Key>
+            <PropertyRef Name="OrderNo" />
+          </Key>
+          <Property Name="OrderNo" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ClientNo" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="OrderDate" Type="DateTime" Precision="0" />
+          <Property Name="DelyAddr" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="SalesManNo" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="DelyType" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="BilledYn" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="DelyDate" Type="DateTime" Precision="0" />
+          <Property Name="OrderStatus" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Client_Master" Relationship="Self.FK__Sales_Ord__Clien__72C60C4A" FromRole="Sales_Order" ToRole="Client_Master" />
+          <NavigationProperty Name="Sales_Order_Details" Relationship="Self.FK__Sales_Ord__Order__797309D9" FromRole="Sales_Order" ToRole="Sales_Order_Details" />
+          <NavigationProperty Name="Salesman_Master" Relationship="Self.FK__Sales_Ord__Sales__73BA3083" FromRole="Sales_Order" ToRole="Salesman_Master" />
+        </EntityType>
+        <EntityType Name="Sales_Order_Details">
+          <Key>
+            <PropertyRef Name="OrderNo" />
+            <PropertyRef Name="ProductNo" />
+          </Key>
+          <Property Name="OrderNo" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ProductNo" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="QtyOrdered" Type="Decimal" Precision="8" Scale="0" />
+          <Property Name="QtyDisp" Type="Decimal" Precision="8" Scale="0" />
+          <Property Name="ProductRate" Type="Decimal" Precision="10" Scale="2" />
+          <NavigationProperty Name="Product_Master" Relationship="Self.FK__Sales_Ord__Produ__7A672E12" FromRole="Sales_Order_Details" ToRole="Product_Master" />
+          <NavigationProperty Name="Sales_Order" Relationship="Self.FK__Sales_Ord__Order__797309D9" FromRole="Sales_Order_Details" ToRole="Sales_Order" />
+        </EntityType>
+        <EntityType Name="Salesman_Master">
+          <Key>
+            <PropertyRef Name="SalesManno" />
+          </Key>
+          <Property Name="SalesManno" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SalesManname" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Address1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Address2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="City" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Pincode" Type="Decimal" Precision="8" Scale="0" />
+          <Property Name="State" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Salamt" Type="Decimal" Precision="8" Scale="2" Nullable="false" />
+          <Property Name="Tgttoget" Type="Decimal" Precision="6" Scale="2" Nullable="false" />
+          <Property Name="Ytdsales" Type="Decimal" Precision="6" Scale="2" Nullable="false" />
+          <Property Name="Remarks" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Sales_Order" Relationship="Self.FK__Sales_Ord__Sales__73BA3083" FromRole="Salesman_Master" ToRole="Sales_Order" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <Association Name="FK__Sales_Ord__Clien__72C60C4A">
+          <End Role="Client_Master" Type="Self.Client_Master" Multiplicity="0..1" />
+          <End Role="Sales_Order" Type="Self.Sales_Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Client_Master">
+              <PropertyRef Name="ClientNo" />
+            </Principal>
+            <Dependent Role="Sales_Order">
+              <PropertyRef Name="ClientNo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Sales_Ord__Produ__7A672E12">
+          <End Role="Product_Master" Type="Self.Product_Master" Multiplicity="1" />
+          <End Role="Sales_Order_Details" Type="Self.Sales_Order_Details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product_Master">
+              <PropertyRef Name="ProductNo" />
+            </Principal>
+            <Dependent Role="Sales_Order_Details">
+              <PropertyRef Name="ProductNo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Sales_Ord__Order__797309D9">
+          <End Role="Sales_Order" Type="Self.Sales_Order" Multiplicity="1" />
+          <End Role="Sales_Order_Details" Type="Self.Sales_Order_Details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sales_Order">
+              <PropertyRef Name="OrderNo" />
+            </Principal>
+            <Dependent Role="Sales_Order_Details">
+              <PropertyRef Name="OrderNo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Sales_Ord__Sales__73BA3083">
+          <End Role="Salesman_Master" Type="Self.Salesman_Master" Multiplicity="0..1" />
+          <End Role="Sales_Order" Type="Self.Sales_Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Salesman_Master">
+              <PropertyRef Name="SalesManno" />
+            </Principal>
+            <Dependent Role="Sales_Order">
+              <PropertyRef Name="SalesManNo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="EMPDEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Client_Master" EntityType="Self.Client_Master" />
+          <EntitySet Name="Product_Master" EntityType="Self.Product_Master" />
+          <EntitySet Name="Sales_Order" EntityType="Self.Sales_Order" />
+          <EntitySet Name="Sales_Order_Details" EntityType="Self.Sales_Order_Details" />
+          <EntitySet Name="Salesman_Master" EntityType="Self.Salesman_Master" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <AssociationSet Name="FK__Sales_Ord__Clien__72C60C4A" Association="Self.FK__Sales_Ord__Clien__72C60C4A">
+            <End Role="Client_Master" EntitySet="Client_Master" />
+            <End Role="Sales_Order" EntitySet="Sales_Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Sales_Ord__Produ__7A672E12" Association="Self.FK__Sales_Ord__Produ__7A672E12">
+            <End Role="Product_Master" EntitySet="Product_Master" />
+            <End Role="Sales_Order_Details" EntitySet="Sales_Order_Details" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Sales_Ord__Order__797309D9" Association="Self.FK__Sales_Ord__Order__797309D9">
+            <End Role="Sales_Order" EntitySet="Sales_Order" />
+            <End Role="Sales_Order_Details" EntitySet="Sales_Order_Details" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Sales_Ord__Sales__73BA3083" Association="Self.FK__Sales_Ord__Sales__73BA3083">
+            <End Role="Salesman_Master" EntitySet="Salesman_Master" />
+            <End Role="Sales_Order" EntitySet="Sales_Order" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="EMPDModelStoreContainer" CdmEntityContainer="EMPDEntities">
+          <EntitySetMapping Name="Client_Master">
+            <EntityTypeMapping TypeName="EMPDModel.Client_Master">
+              <MappingFragment StoreEntitySet="Client_Master">
+                <ScalarProperty Name="ClientNo" ColumnName="ClientNo" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Address1" ColumnName="Address1" />
+                <ScalarProperty Name="Address2" ColumnName="Address2" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="BalDue" ColumnName="BalDue" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Product_Master">
+            <EntityTypeMapping TypeName="EMPDModel.Product_Master">
+              <MappingFragment StoreEntitySet="Product_Master">
+                <ScalarProperty Name="ProductNo" ColumnName="ProductNo" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ProfitPerc" ColumnName="ProfitPerc" />
+                <ScalarProperty Name="UnitMeasure" ColumnName="UnitMeasure" />
+                <ScalarProperty Name="QtyonHand" ColumnName="QtyonHand" />
+                <ScalarProperty Name="ReorderLvl" ColumnName="ReorderLvl" />
+                <ScalarProperty Name="SellPrice" ColumnName="SellPrice" />
+                <ScalarProperty Name="CostPrice" ColumnName="CostPrice" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sales_Order">
+            <EntityTypeMapping TypeName="EMPDModel.Sales_Order">
+              <MappingFragment StoreEntitySet="Sales_Order">
+                <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+                <ScalarProperty Name="ClientNo" ColumnName="ClientNo" />
+                <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+                <ScalarProperty Name="DelyAddr" ColumnName="DelyAddr" />
+                <ScalarProperty Name="SalesManNo" ColumnName="SalesManNo" />
+                <ScalarProperty Name="DelyType" ColumnName="DelyType" />
+                <ScalarProperty Name="BilledYn" ColumnName="BilledYn" />
+                <ScalarProperty Name="DelyDate" ColumnName="DelyDate" />
+                <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sales_Order_Details">
+            <EntityTypeMapping TypeName="EMPDModel.Sales_Order_Details">
+              <MappingFragment StoreEntitySet="Sales_Order_Details">
+                <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+                <ScalarProperty Name="ProductNo" ColumnName="ProductNo" />
+                <ScalarProperty Name="QtyOrdered" ColumnName="QtyOrdered" />
+                <ScalarProperty Name="QtyDisp" ColumnName="QtyDisp" />
+                <ScalarProperty Name="ProductRate" ColumnName="ProductRate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Salesman_Master">
+            <EntityTypeMapping TypeName="EMPDModel.Salesman_Master">
+              <MappingFragment StoreEntitySet="Salesman_Master">
+                <ScalarProperty Name="SalesManno" ColumnName="SalesManno" />
+                <ScalarProperty Name="SalesManname" ColumnName="SalesManname" />
+                <ScalarProperty Name="Address1" ColumnName="Address1" />
+                <ScalarProperty Name="Address2" ColumnName="Address2" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Salamt" ColumnName="Salamt" />
+                <ScalarProperty Name="Tgttoget" ColumnName="Tgttoget" />
+                <ScalarProperty Name="Ytdsales" ColumnName="Ytdsales" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="EMPDModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
