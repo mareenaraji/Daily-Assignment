@@ -1,0 +1,1 @@
+select * from Dept, Customer where Customer.DeptId=Dept.DeptId;

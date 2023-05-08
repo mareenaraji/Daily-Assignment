@@ -1,0 +1,1 @@
+delete from Customer where cust_id=10;

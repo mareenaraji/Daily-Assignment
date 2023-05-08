@@ -1,0 +1,1 @@
+insert into Dept values(103, 'Finance');

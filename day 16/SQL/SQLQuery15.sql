@@ -1,0 +1,1 @@
+select 'India',CHARINDEX('i','India') as 'Position in string';

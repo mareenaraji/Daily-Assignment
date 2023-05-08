@@ -1,0 +1,1 @@
+select cust_name +'is registered.'+ cust_id from Customer;

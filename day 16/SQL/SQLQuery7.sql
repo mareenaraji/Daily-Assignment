@@ -1,0 +1,1 @@
+create table Customer(cust_id int,cust_name varchar(30),cust_city varchar(30));
