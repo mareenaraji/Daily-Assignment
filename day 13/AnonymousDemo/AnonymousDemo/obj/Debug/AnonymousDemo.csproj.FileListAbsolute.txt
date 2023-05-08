@@ -1,0 +1,8 @@
+D:\UST DEMO\day 13\AnonymousDemo\AnonymousDemo\bin\Debug\AnonymousDemo.exe.config
+D:\UST DEMO\day 13\AnonymousDemo\AnonymousDemo\bin\Debug\AnonymousDemo.exe
+D:\UST DEMO\day 13\AnonymousDemo\AnonymousDemo\bin\Debug\AnonymousDemo.pdb
+D:\UST DEMO\day 13\AnonymousDemo\AnonymousDemo\obj\Debug\AnonymousDemo.csproj.AssemblyReference.cache
+D:\UST DEMO\day 13\AnonymousDemo\AnonymousDemo\obj\Debug\AnonymousDemo.csproj.SuggestedBindingRedirects.cache
+D:\UST DEMO\day 13\AnonymousDemo\AnonymousDemo\obj\Debug\AnonymousDemo.csproj.CoreCompileInputs.cache
+D:\UST DEMO\day 13\AnonymousDemo\AnonymousDemo\obj\Debug\AnonymousDemo.exe
+D:\UST DEMO\day 13\AnonymousDemo\AnonymousDemo\obj\Debug\AnonymousDemo.pdb
