@@ -1,0 +1,15 @@
+D:\UST DEMO\day 29\SampleExercise2\SampleExercise2\bin\Debug\net6.0\SampleExercise2.exe
+D:\UST DEMO\day 29\SampleExercise2\SampleExercise2\bin\Debug\net6.0\SampleExercise2.deps.json
+D:\UST DEMO\day 29\SampleExercise2\SampleExercise2\bin\Debug\net6.0\SampleExercise2.runtimeconfig.json
+D:\UST DEMO\day 29\SampleExercise2\SampleExercise2\bin\Debug\net6.0\SampleExercise2.dll
+D:\UST DEMO\day 29\SampleExercise2\SampleExercise2\bin\Debug\net6.0\SampleExercise2.pdb
+D:\UST DEMO\day 29\SampleExercise2\SampleExercise2\obj\Debug\net6.0\SampleExercise2.csproj.AssemblyReference.cache
+D:\UST DEMO\day 29\SampleExercise2\SampleExercise2\obj\Debug\net6.0\SampleExercise2.GeneratedMSBuildEditorConfig.editorconfig
+D:\UST DEMO\day 29\SampleExercise2\SampleExercise2\obj\Debug\net6.0\SampleExercise2.AssemblyInfoInputs.cache
+D:\UST DEMO\day 29\SampleExercise2\SampleExercise2\obj\Debug\net6.0\SampleExercise2.AssemblyInfo.cs
+D:\UST DEMO\day 29\SampleExercise2\SampleExercise2\obj\Debug\net6.0\SampleExercise2.csproj.CoreCompileInputs.cache
+D:\UST DEMO\day 29\SampleExercise2\SampleExercise2\obj\Debug\net6.0\SampleExercise2.dll
+D:\UST DEMO\day 29\SampleExercise2\SampleExercise2\obj\Debug\net6.0\refint\SampleExercise2.dll
+D:\UST DEMO\day 29\SampleExercise2\SampleExercise2\obj\Debug\net6.0\SampleExercise2.pdb
+D:\UST DEMO\day 29\SampleExercise2\SampleExercise2\obj\Debug\net6.0\SampleExercise2.genruntimeconfig.cache
+D:\UST DEMO\day 29\SampleExercise2\SampleExercise2\obj\Debug\net6.0\ref\SampleExercise2.dll

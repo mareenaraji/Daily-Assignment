@@ -1,0 +1,15 @@
+D:\UST DEMO\day 29\SE3\SE3\bin\Debug\net6.0\SE3.exe
+D:\UST DEMO\day 29\SE3\SE3\bin\Debug\net6.0\SE3.deps.json
+D:\UST DEMO\day 29\SE3\SE3\bin\Debug\net6.0\SE3.runtimeconfig.json
+D:\UST DEMO\day 29\SE3\SE3\bin\Debug\net6.0\SE3.dll
+D:\UST DEMO\day 29\SE3\SE3\bin\Debug\net6.0\SE3.pdb
+D:\UST DEMO\day 29\SE3\SE3\obj\Debug\net6.0\SE3.csproj.AssemblyReference.cache
+D:\UST DEMO\day 29\SE3\SE3\obj\Debug\net6.0\SE3.GeneratedMSBuildEditorConfig.editorconfig
+D:\UST DEMO\day 29\SE3\SE3\obj\Debug\net6.0\SE3.AssemblyInfoInputs.cache
+D:\UST DEMO\day 29\SE3\SE3\obj\Debug\net6.0\SE3.AssemblyInfo.cs
+D:\UST DEMO\day 29\SE3\SE3\obj\Debug\net6.0\SE3.csproj.CoreCompileInputs.cache
+D:\UST DEMO\day 29\SE3\SE3\obj\Debug\net6.0\SE3.dll
+D:\UST DEMO\day 29\SE3\SE3\obj\Debug\net6.0\refint\SE3.dll
+D:\UST DEMO\day 29\SE3\SE3\obj\Debug\net6.0\SE3.pdb
+D:\UST DEMO\day 29\SE3\SE3\obj\Debug\net6.0\SE3.genruntimeconfig.cache
+D:\UST DEMO\day 29\SE3\SE3\obj\Debug\net6.0\ref\SE3.dll
