@@ -1,0 +1,8 @@
+D:\UST DEMO\day 30\SE5\SE5\bin\Debug\SE5.exe.config
+D:\UST DEMO\day 30\SE5\SE5\bin\Debug\SE5.exe
+D:\UST DEMO\day 30\SE5\SE5\bin\Debug\SE5.pdb
+D:\UST DEMO\day 30\SE5\SE5\obj\Debug\SE5.csproj.AssemblyReference.cache
+D:\UST DEMO\day 30\SE5\SE5\obj\Debug\SE5.csproj.SuggestedBindingRedirects.cache
+D:\UST DEMO\day 30\SE5\SE5\obj\Debug\SE5.csproj.CoreCompileInputs.cache
+D:\UST DEMO\day 30\SE5\SE5\obj\Debug\SE5.exe
+D:\UST DEMO\day 30\SE5\SE5\obj\Debug\SE5.pdb

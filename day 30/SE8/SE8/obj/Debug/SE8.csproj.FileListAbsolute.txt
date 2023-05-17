@@ -1,0 +1,8 @@
+D:\UST DEMO\day 30\SE8\SE8\obj\Debug\SE8.csproj.AssemblyReference.cache
+D:\UST DEMO\day 30\SE8\SE8\obj\Debug\SE8.csproj.SuggestedBindingRedirects.cache
+D:\UST DEMO\day 30\SE8\SE8\obj\Debug\SE8.csproj.CoreCompileInputs.cache
+D:\UST DEMO\day 30\SE8\SE8\bin\Debug\SE8.exe.config
+D:\UST DEMO\day 30\SE8\SE8\bin\Debug\SE8.exe
+D:\UST DEMO\day 30\SE8\SE8\bin\Debug\SE8.pdb
+D:\UST DEMO\day 30\SE8\SE8\obj\Debug\SE8.exe
+D:\UST DEMO\day 30\SE8\SE8\obj\Debug\SE8.pdb

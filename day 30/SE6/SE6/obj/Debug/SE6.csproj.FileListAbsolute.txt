@@ -1,0 +1,8 @@
+D:\UST DEMO\day 30\SE6\SE6\obj\Debug\SE6.csproj.AssemblyReference.cache
+D:\UST DEMO\day 30\SE6\SE6\obj\Debug\SE6.csproj.SuggestedBindingRedirects.cache
+D:\UST DEMO\day 30\SE6\SE6\obj\Debug\SE6.csproj.CoreCompileInputs.cache
+D:\UST DEMO\day 30\SE6\SE6\bin\Debug\SE6.exe.config
+D:\UST DEMO\day 30\SE6\SE6\bin\Debug\SE6.exe
+D:\UST DEMO\day 30\SE6\SE6\bin\Debug\SE6.pdb
+D:\UST DEMO\day 30\SE6\SE6\obj\Debug\SE6.exe
+D:\UST DEMO\day 30\SE6\SE6\obj\Debug\SE6.pdb
