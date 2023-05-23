@@ -1,0 +1,8 @@
+D:\UST DEMO\day 12\IODemoApp\IODemoApp\bin\Debug\IODemoApp.exe.config
+D:\UST DEMO\day 12\IODemoApp\IODemoApp\bin\Debug\IODemoApp.exe
+D:\UST DEMO\day 12\IODemoApp\IODemoApp\bin\Debug\IODemoApp.pdb
+D:\UST DEMO\day 12\IODemoApp\IODemoApp\obj\Debug\IODemoApp.csproj.AssemblyReference.cache
+D:\UST DEMO\day 12\IODemoApp\IODemoApp\obj\Debug\IODemoApp.csproj.SuggestedBindingRedirects.cache
+D:\UST DEMO\day 12\IODemoApp\IODemoApp\obj\Debug\IODemoApp.csproj.CoreCompileInputs.cache
+D:\UST DEMO\day 12\IODemoApp\IODemoApp\obj\Debug\IODemoApp.exe
+D:\UST DEMO\day 12\IODemoApp\IODemoApp\obj\Debug\IODemoApp.pdb
