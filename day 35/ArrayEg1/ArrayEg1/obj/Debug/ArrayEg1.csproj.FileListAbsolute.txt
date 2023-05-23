@@ -1,0 +1,8 @@
+D:\UST DEMO\day 35\ArrayEg1\ArrayEg1\bin\Debug\ArrayEg1.exe.config
+D:\UST DEMO\day 35\ArrayEg1\ArrayEg1\bin\Debug\ArrayEg1.exe
+D:\UST DEMO\day 35\ArrayEg1\ArrayEg1\bin\Debug\ArrayEg1.pdb
+D:\UST DEMO\day 35\ArrayEg1\ArrayEg1\obj\Debug\ArrayEg1.csproj.AssemblyReference.cache
+D:\UST DEMO\day 35\ArrayEg1\ArrayEg1\obj\Debug\ArrayEg1.csproj.SuggestedBindingRedirects.cache
+D:\UST DEMO\day 35\ArrayEg1\ArrayEg1\obj\Debug\ArrayEg1.csproj.CoreCompileInputs.cache
+D:\UST DEMO\day 35\ArrayEg1\ArrayEg1\obj\Debug\ArrayEg1.exe
+D:\UST DEMO\day 35\ArrayEg1\ArrayEg1\obj\Debug\ArrayEg1.pdb

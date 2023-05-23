@@ -1,0 +1,8 @@
+D:\UST DEMO\day 35\ConsoleApp1Array\ConsoleApp1Array\bin\Debug\ConsoleApp1Array.exe.config
+D:\UST DEMO\day 35\ConsoleApp1Array\ConsoleApp1Array\bin\Debug\ConsoleApp1Array.exe
+D:\UST DEMO\day 35\ConsoleApp1Array\ConsoleApp1Array\bin\Debug\ConsoleApp1Array.pdb
+D:\UST DEMO\day 35\ConsoleApp1Array\ConsoleApp1Array\obj\Debug\ConsoleApp1Array.csproj.AssemblyReference.cache
+D:\UST DEMO\day 35\ConsoleApp1Array\ConsoleApp1Array\obj\Debug\ConsoleApp1Array.csproj.SuggestedBindingRedirects.cache
+D:\UST DEMO\day 35\ConsoleApp1Array\ConsoleApp1Array\obj\Debug\ConsoleApp1Array.csproj.CoreCompileInputs.cache
+D:\UST DEMO\day 35\ConsoleApp1Array\ConsoleApp1Array\obj\Debug\ConsoleApp1Array.exe
+D:\UST DEMO\day 35\ConsoleApp1Array\ConsoleApp1Array\obj\Debug\ConsoleApp1Array.pdb
