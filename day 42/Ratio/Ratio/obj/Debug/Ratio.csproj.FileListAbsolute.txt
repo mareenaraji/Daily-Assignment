@@ -1,0 +1,8 @@
+D:\UST DEMO\day 42\Ratio\Ratio\bin\Debug\Ratio.exe.config
+D:\UST DEMO\day 42\Ratio\Ratio\bin\Debug\Ratio.exe
+D:\UST DEMO\day 42\Ratio\Ratio\bin\Debug\Ratio.pdb
+D:\UST DEMO\day 42\Ratio\Ratio\obj\Debug\Ratio.csproj.AssemblyReference.cache
+D:\UST DEMO\day 42\Ratio\Ratio\obj\Debug\Ratio.csproj.SuggestedBindingRedirects.cache
+D:\UST DEMO\day 42\Ratio\Ratio\obj\Debug\Ratio.csproj.CoreCompileInputs.cache
+D:\UST DEMO\day 42\Ratio\Ratio\obj\Debug\Ratio.exe
+D:\UST DEMO\day 42\Ratio\Ratio\obj\Debug\Ratio.pdb
