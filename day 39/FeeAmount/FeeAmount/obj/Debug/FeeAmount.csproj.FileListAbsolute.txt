@@ -1,0 +1,8 @@
+D:\UST DEMO\day 39\FeeAmount\FeeAmount\bin\Debug\FeeAmount.exe.config
+D:\UST DEMO\day 39\FeeAmount\FeeAmount\bin\Debug\FeeAmount.exe
+D:\UST DEMO\day 39\FeeAmount\FeeAmount\bin\Debug\FeeAmount.pdb
+D:\UST DEMO\day 39\FeeAmount\FeeAmount\obj\Debug\FeeAmount.csproj.AssemblyReference.cache
+D:\UST DEMO\day 39\FeeAmount\FeeAmount\obj\Debug\FeeAmount.csproj.SuggestedBindingRedirects.cache
+D:\UST DEMO\day 39\FeeAmount\FeeAmount\obj\Debug\FeeAmount.csproj.CoreCompileInputs.cache
+D:\UST DEMO\day 39\FeeAmount\FeeAmount\obj\Debug\FeeAmount.exe
+D:\UST DEMO\day 39\FeeAmount\FeeAmount\obj\Debug\FeeAmount.pdb
