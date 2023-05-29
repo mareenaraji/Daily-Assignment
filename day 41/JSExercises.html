@@ -1,0 +1,63 @@
+<html>
+    <head><title>Javascript Exercises</title>
+        <script>
+            // Initialize an array of 10 numbers
+    
+    var numbers = [12, 45, 67, 89, 34, 56, 78, 90, 23, 54];
+    
+    // a. Reverse the array
+    
+    var reversedArray = numbers.reverse();
+    
+    document.write("<br>Reversed Array:<br>", reversedArray);
+    
+    // b. Display numbers above 50 or show exception
+    
+    try {
+    
+     var resultArray = reversedArray.filter(function(num) {
+    
+      if (num > 50) {
+    
+       return num;
+    
+      } else {
+    
+       throw "Number below 50 found.<br>";
+    
+      }
+    
+     });
+    
+     document.write("<br>Result Array:<br>", resultArray);
+    
+    } catch (exception) {
+    
+     document.write("<br>Exception:<br>", exception);
+    
+    }
+    
+    // c. Separate even and odd numbers into two columns of a table
+    
+    document.write("<br>Even Numbers\t\tOdd Numbers<br>");
+    
+    for (var i = 0; i < numbers.length; i++) {
+    
+     if (numbers[i] % 2 == 0) {
+    
+     document.write(numbers[i] + "\t\t\t-");
+    
+     } else {
+    document.write("-\t\t\t" + numbers[i]);
+    
+     }
+    
+    }
+        </script>
+    </head>
+<body>
+
+
+</body>
+
+</html>

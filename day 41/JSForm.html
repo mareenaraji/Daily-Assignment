@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Day of the Week</title>
+</head>
+<body>
+  <form>
+    <label for="dayInput">Enter a number from 0 to 6:</label>
+    <input type="text" id="dayInput" name="dayInput">
+    <button type="button" onclick="getDayOfWeek()">Get Day of the Week</button>
+  </form>
+  <script>
+    function getDayOfWeek() {
+      var dayInput = document.getElementById('dayInput').value;
+      if (dayInput>=0 && dayInput<=6) {
+      var daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      var selectedDay = daysOfWeek[dayInput];
+      
+     
+        alert("The selected day is: " + selectedDay);
+      }
+        
+        else(dayInput>=7)
+        {
+            alert("Wrong Input");       
+        } 
+    }    
+    
+  </script>
+</body>
+</html>
